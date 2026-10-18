@@ -1,4 +1,4 @@
-# 💧 Sistema de Monitoramento de Níveis de Água
+# 💧  Controle de Níveis de Água
 
 Um sistema simples via terminal para simular o monitoramento de um reservatório de água, emitindo alertas visuais coloridos conforme o nível de risco.
 
@@ -53,30 +53,30 @@ O projeto utiliza a biblioteca `colorama` para colorir a saída no terminal e ga
 
 | Nível | Situação | Mensagem Exibida | Cor no Terminal |
 | :---: | :--- | :--- | :--- |
-| **1** | Muito baixo (crítico) | Nível 1 - Muito baixo (crítico) | 🔴 Vermelho (`Fore.RED`) |
-| **2** | Baixo | Nível 2 - Baixo | 🟡 Amarelo (`Fore.YELLOW`) |
-| **3** | Médio | Nível 3 - Médio | 🟢 Verde (`Fore.GREEN`) |
-| **4** | Alto | Nível 4 - Alto | 🔵 Ciano (`Fore.CYAN`) |
-| **5** | Muito alto (alerta) | Nível 5 - Muito alto (alerta) | 🔵 Azul (`Fore.BLUE`) |
+| **Nível 1** | Muito baixo (crítico) | Nível 1 - Muito baixo (crítico) | 🔴 Vermelho (`Fore.RED`) |
+| **Nível 2** | Baixo | Nível 2 - Baixo | 🟡 Amarelo (`Fore.YELLOW`) |
+| **Nível 3** | Médio | Nível 3 - Médio | 🟢 Verde (`Fore.GREEN`) |
+| **Nível 4** | Alto | Nível 4 - Alto | 🔵 Ciano (`Fore.CYAN`) |
+| **Nível 5** | Muito alto (alerta) | Nível 5 - Muito alto (alerta) | 🔵 Azul (`Fore.BLUE`) |
 | **Outro** | Inválido | Nível inválido | ⚪ Padrão do sistema |
 
 --- 
 
 ## 📊 Exemplo de uso
 
-exibir_alerta(1)
-exibir_alerta(4)
-exibir_alerta(10)
+exibir_alerta(1) </br>
+exibir_alerta(4)  </br>
+exibir_alerta(10) </br>
 
-Saída no terminal:
-(Mensagem 1 em Vermelho)
-Nível 1 - Muito baixo (crítico)
+**Saída no terminal:** </br>
+(Mensagem 1 em Vermelho) </br>
+Nível 1 - Muito baixo (crítico)</br>
 
-(Mensagem 4 em Ciano)
-Nível 4 - Alto
+(Mensagem 4 em Ciano)</br>
+Nível 4 - Alto</br>
 
-(Mensagem de erro)
-Nível inválido
+(Mensagem de erro)</br>
+Nível inválido</br>
 
 (O terminal retorna à cor padrão branca/cinza logo em seguida).
 
